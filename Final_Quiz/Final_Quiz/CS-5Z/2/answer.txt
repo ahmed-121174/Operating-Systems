@@ -1,0 +1,25 @@
+### Q1: Process Tree for the Code
+
+#### Code Breakdown:
+1. The first `fork()` creates 1 new child process.  
+2. Inside the first child process (`pid == 0`), another `fork()` is called, creating another child.  
+3. A final `fork()` is called by all existing processes.
+
+#### Process Tree:
+```
+          P0
+       /     \
+      P1      P2
+     /  \    /  \
+   P3   P4  P5   P6
+```
+- **P0**: Original process.  
+- **P1, P2**: Created by the first `fork()`.  
+- **P3, P4, P5, P6**: Created by subsequent `fork()` calls.
+
+---
+
+### Q2: What Happens When a Parent Dies Before Its Child?
+
+- **Behavior:** The child process becomes an **orphan**.  
+- **Outcome:** The orphaned child is adopted by the `init` process (PID 1) or a similar reaper process to ensure it is managed correctly.

@@ -1,0 +1,54 @@
+### Q1: Create `notes.txt` in `d` and Remove the Directory Structure
+
+#### Commands:
+1. **Create file in `d`:**  
+   ```bash
+   touch ../d/notes.txt
+   ```
+   - `../d`: Refers to the `d` directory relative to `c`.  
+   - `touch`: Creates an empty file named `notes.txt`.
+
+2. **Return to `/home/user`:**  
+   ```bash
+   cd ~/home/user
+   ```
+   - `cd ~`: Navigates to the user's home directory.  
+
+2. remove  recursive root
+
+rm -er
+
+### Q1: Create `notes.txt` in `d` and Remove the Directory Structure
+
+#### Commands:
+1. **Create file in `d`:**  
+   ```bash
+   touch ../d/notes.txt
+   ```
+   - `../d`: Refers to the `d` directory relative to `c`.  
+   - `touch`: Creates an empty file named `notes.txt`.
+
+2. **Return to `/home/user`:**  
+   ```bash
+   cd /home/user
+   ```
+   - `cd`: Changes the current directory to `/home/user`.
+
+3. **Remove the entire directory structure:**  
+   ```bash
+   rm -r a
+   ```
+   - `rm -r`: Recursively removes directories and their contents.  
+   - `a`: The top-level directory of the structure.
+
+---
+
+### Q2: List Files in `dir1` Starting with "log"
+
+#### Command:
+```bash
+ls dir1/log*
+```
+- `ls`: Lists files in a directory.  
+- `dir1/log*`: Matches all files in `dir1` whose names start with "log".  
+- `*`: Wildcard that matches zero or more characters following "log".

@@ -1,0 +1,14 @@
+### Q1: GPT vs MBR
+
+- **GPT:** **GUID Partition Table**  
+- **MBR:** **Master Boot Record**  
+
+**Difference:**  
+- **GPT:** Supports large drives (>2TB), unlimited partitions, and stores multiple partition tables for redundancy.  
+- **MBR:** Limited to 4 primary partitions and 2TB drives, with a single partition table (less reliable).
+
+---
+
+### Q2: Type of List Maintained by Firmware  
+
+- Firmware maintains a **Boot Device List** (or Boot Order), specifying the sequence of devices to check for bootable media.

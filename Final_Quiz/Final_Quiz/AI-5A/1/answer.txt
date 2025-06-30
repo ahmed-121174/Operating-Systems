@@ -1,0 +1,21 @@
+### Q1: Difference between `root` and `/root`, and `/home` vs `/root`
+
+- **`root` vs `/root`:**  
+  - `root`: Refers to the superuser account with administrative privileges.  
+  - `/root`: The home directory for the `root` user.
+
+- **`/home` vs `/root`:**  
+  - `/home`: Directory where regular users' home directories are stored (e.g., `/home/user1`).  
+  - `/root`: Dedicated home directory for the `root` user, separate from regular users.
+
+---
+
+### Q2: What is `sudo`? How it differs from the `root` user?
+
+- **`sudo`:** Command that allows a permitted user to execute commands with elevated (root) privileges temporarily.  
+
+- **Scenario:** Installing software (`sudo apt install package-name`) requires administrative privileges to modify system files.  
+
+- **Difference:**  
+  - `sudo`: Executes commands as root temporarily for specific tasks, requiring authentication.  
+  - `root`: A permanent superuser account with unrestricted access to the system.
